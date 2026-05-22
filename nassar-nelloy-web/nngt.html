@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NNGT - Dry Division</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+      .animate-marquee { display: flex; width: max-content; animation: marquee 25s linear infinite reverse; }
+      .animate-marquee:hover { animation-play-state: paused; }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-[#FAFAFA] text-[#1A1A1A] font-sans selection:bg-amber-600 selection:text-white">
+      
+      <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#FAFAFA]/80 border-b border-gray-200 px-6 py-6 md:px-12 flex justify-between items-center">
+        <div class="text-sm font-bold tracking-widest uppercase text-amber-900">NNGT <span class="text-gray-400 font-normal">| Dry FMCG</span></div>
+        <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-gray-500 hover:text-[#1A1A1A]">← Back to Group</a>
+      </nav>
+
+      <section class="pt-40 pb-24 px-6 md:px-12 bg-gradient-to-br from-[#FDFBFB] to-[#EBEDEE] relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center animate-fade-in-up">
+          <p class="text-amber-700 uppercase tracking-widest text-xs font-bold mb-6">Roots 2000 | Est. 2009</p>
+          <h1 class="text-5xl md:text-7xl font-medium tracking-tighter leading-[0.9] mb-8 text-amber-950">
+            The Anchor of<br />FMCG Distribution.
+          </h1>
+          <p class="text-xl text-gray-600 tracking-tight max-w-2xl mx-auto mb-16">
+            Nassar Nelloy General Trading represents the heritage of our trading power. Decades of market presence translate to unmatched sourcing capabilities and shelf-space dominance.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+            <div class="bg-white p-6 border border-gray-100">
+              <div class="text-sm font-bold uppercase tracking-widest text-amber-700 mb-2">Beverages & Snacks</div>
+            </div>
+            <div class="bg-white p-6 border border-gray-100">
+              <div class="text-sm font-bold uppercase tracking-widest text-amber-700 mb-2">Culinary & Staples</div>
+            </div>
+            <div class="bg-white p-6 border border-gray-100">
+              <div class="text-sm font-bold uppercase tracking-widest text-amber-700 mb-2">Home & Personal Care</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Infinite Brands Marquee -->
+      <section class="py-24 bg-white overflow-hidden border-y border-gray-200">
+        <h2 class="text-center text-xs font-bold uppercase tracking-widest text-gray-400 mb-12">Priority Brand Portfolio</h2>
+        <div class="relative w-full">
+          <div class="animate-marquee">
+            <!-- First Set -->
+            <div class="flex items-center space-x-16 px-8 text-4xl md:text-5xl font-bold uppercase tracking-tighter text-gray-200">
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Freshfood</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Nestlé</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Lipton</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">PepsiCo</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Coca-Cola</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Kellogg’s</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Shan Masala</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">California Garden</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Tide</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Pringles</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Anchor</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">CareX</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">RS</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Volga</span>
+            </div>
+            <!-- Duplicated Set for Infinite Loop -->
+            <div class="flex items-center space-x-16 px-8 text-4xl md:text-5xl font-bold uppercase tracking-tighter text-gray-200">
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Freshfood</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Nestlé</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Lipton</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">PepsiCo</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Coca-Cola</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Kellogg’s</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Shan Masala</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">California Garden</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Tide</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Pringles</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Anchor</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">CareX</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">RS</span>
+              <span class="hover:text-amber-600 transition-colors cursor-pointer">Volga</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-amber-950 text-white py-24 px-6 md:px-12 text-center">
+        <h2 class="text-4xl font-medium tracking-tighter mb-8">Secure Your Supply.</h2>
+        <a href="https://wa.me/1234567890" target="_blank" class="inline-block px-8 py-4 bg-[#25D366] text-white text-sm font-bold uppercase tracking-widest hover:bg-[#1EBE5A] transition-colors rounded-full shadow-lg">WhatsApp Order Now</a>
+      </footer>
+    </div>
+  </body>
+</html>
